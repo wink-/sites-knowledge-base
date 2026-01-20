@@ -33,6 +33,58 @@ This is a multi-site content management system for seven interconnected websites
 
 ## Development Workflow
 
+### ⚠️ CRITICAL WORKFLOW RULES - READ BEFORE STARTING ANY WORK
+
+**MANDATORY: Always sync repositories before starting work**
+
+Before making any changes, you MUST ensure all submodules are up-to-date with their remotes. This prevents conflicts and ensures you're working on the latest code.
+
+```bash
+# ALWAYS run this first before any work
+git pull --recurse-submodules
+
+# Then check each submodule individually
+git submodule foreach 'git pull origin main || git pull origin master'
+
+# Verify all submodules are clean
+git submodule status
+git submodule foreach 'git status'
+```
+
+**MANDATORY: Always work in a branch or worktree**
+
+NEVER commit directly to the main/master branch of any submodule. Always create a branch first:
+
+```bash
+# Navigate to the site you'll work on
+cd [site-directory]
+
+# Option 1: Create a feature branch (recommended for single tasks)
+git checkout -b feature/descriptive-task-name
+
+# Option 2: Create a worktree (recommended for parallel work)
+cd ..
+git worktree add [site-directory]-taskname [branch-name]
+cd [site-directory]-taskname
+
+# After completing work:
+# - Merge or create PR for branch
+# - Or delete worktree when done: git worktree remove [worktree-path]
+```
+
+**Why this matters:**
+- Submodules can be behind their remotes (as we discovered)
+- Pushing without pulling first causes conflicts
+- Working on main/master makes rollback difficult
+- Branches isolate changes and enable safe experimentation
+
+**Pre-work checklist:**
+1. ✅ Ran `git pull --recurse-submodules`
+2. ✅ Ran `git submodule foreach 'git pull'` on each site
+3. ✅ Confirmed `git status` shows clean or expected changes
+4. ✅ Created feature branch or worktree for new work
+5. ✅ Verified branch with `git branch`
+
 ### Initial Setup (New Computer)
 ```bash
 # Clone the repository with all submodules
@@ -240,10 +292,18 @@ git submodule foreach 'echo $name: && git status'
 
 ## Development Notes
 
-### Current Issues
-- **Empty site directories**: Site submodules appear empty (may need initialization)
+### Current Issues (as of 2025-01-19)
+- **Theme Submodules**: Some sites have uninitialized theme submodules (resolved during site fixes)
+  - ai-independence, ai-sovereignty, open-source-apocalypse needed terminal theme init
+  - winkky-farms, radiant-home-solutions needed ananke theme init
+  - All themes now properly initialized and building
+- **Submodule Sync**: Submodules can become out of sync with remotes
+  - Always run `git pull --recurse-submodules` before any work
+  - Always check `git submodule foreach 'git status'` for unpushed changes
+- **Branch Hygiene**: No enforced branching strategy
+  - Always work in feature branches or worktrees
+  - Never commit directly to main/master in submodules
 - **Path Dependencies**: Some scripts contain hardcoded paths that may need updating
-- **Theme Management**: Terminal and Ananke themes duplicated across Hugo sites
 - **Script Maintenance**: new-post.sh uses dynamic paths but may need site-specific updates
 - **Multi-Technology Setup**: Need to develop workflows for both Hugo and static HTML sites
 
