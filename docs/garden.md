@@ -30,13 +30,17 @@
 | Crop | Status | Notes |
 |------|--------|-------|
 | Asparagus | Planned | Plant once, harvest for 20+ years |
-| Blueberries | Planned | Need acidic soil -- may need separate bed or amendments |
+| Blueberries | Acquired | Need acidic soil -- may need separate bed or amendments |
+| Blackberries | Acquired | Thornless variety? TBD |
+| Raspberries | Acquired | |
 | Strawberries | Planned | Ground cover, good companion for blueberries |
+| Grapes | Acquired | Variety TBD |
+| Hazelnuts | Acquired | Need 2 for pollination (like Yamhill + Jefferson) |
 
 ## Other Plantings
 
 - Swamp oaks planted last year (2025) -- monitoring survival
-- Additional bushes (variety TBD)
+- Fruit trees -- see docs/fruit-trees.md
 
 ## Infrastructure
 
