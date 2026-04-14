@@ -41,14 +41,20 @@ The GridBoss is a micro-grid main disconnect / transfer switch. Key specs from t
 - Remote management via EG4 Monitor Center / mobile app
 - Manual bypass mode available
 
+## Why This Size
+
+16.96 kW is oversized for a 1,450 sq ft house. The reason: Rob drives a 2023 Tesla Model Y Long Range and charges at home. The array needs to cover both household use and EV charging. He also drives for Uber as a side hustle, so the car sees heavy use -- more miles means more charging demand.
+
 ## Content Ideas
 
-- Real-world production numbers after installation (monthly kWh)
+- Real-world production vs EV charging consumption (can the array actually cover both?)
+- Uber driving economics with a Tesla: what you actually earn after charging costs
 - Ground mount vs rooftop decision and cost difference
 - EG4 GridBoss setup walkthrough (for opensourceapocalypse.com or theindependenthome.com)
 - Silfab panel review after 6 months
-- Winter production in upstate NY
-- ROI timeline with actual NY electricity rates
+- Winter production in upstate NY with an EV to charge
+- ROI timeline: solar + EV vs grid + gas car
+- How much of the Uber income goes to electricity vs what solar offsets
 
 ## File Reference
 
