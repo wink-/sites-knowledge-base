@@ -17,9 +17,26 @@
 
 ## 2026 Season Plan
 
-To be determined. Inspiration garden focuses on high-value crops: tomatoes, beans, peppers, salad greens, squash, herbs.
+- Perennials: asparagus, blueberries, strawberries
+- Potatoes in containers (trial run)
+- A few bushes (variety TBD)
+- Winter garlic already in ground from fall 2025
+- Adding topsoil/compost mix before planting
+- Inspired by Rachel's compact grocery-saving garden (see media/inspiration/)
+- Has cattle panels for trellises
 
-Rob has cattle panels already (from tree fences) -- could use for trellises.
+## Perennials
+
+| Crop | Status | Notes |
+|------|--------|-------|
+| Asparagus | Planned | Plant once, harvest for 20+ years |
+| Blueberries | Planned | Need acidic soil -- may need separate bed or amendments |
+| Strawberries | Planned | Ground cover, good companion for blueberries |
+
+## Other Plantings
+
+- Swamp oaks planted last year (2025) -- monitoring survival
+- Additional bushes (variety TBD)
 
 ## Infrastructure
 
