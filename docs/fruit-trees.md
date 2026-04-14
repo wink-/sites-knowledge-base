@@ -28,6 +28,7 @@ Planted October 18, 2025. Two rows running north-south. All trees were 6-10 ft t
 - Deer fencing: not yet installed -- still needed for orchard area and garden
 - No tree guards or trunk wraps noted
 - Wood chip mulch from ChipDrop ($40 for a huge load) around tree and garden areas
+- **Plan for deer:** 6ft diameter deer netting cages around each tree using T-posts, creating a double-fence barrier (inner cattle panel for beavers, outer deer netting). ~$110-160 total for all 9 trees.
 
 ## Soil
 
