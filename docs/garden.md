@@ -31,11 +31,11 @@
 |------|--------|-------|
 | Asparagus | Planned | Plant once, harvest for 20+ years |
 | Blueberries | Acquired | Need acidic soil -- may need separate bed or amendments |
-| Blackberries | Acquired | Thornless variety? TBD |
-| Raspberries | Acquired | |
+| Blackberries | Acquired | Thorned variety |
+| Raspberries | Acquired | Thorned variety |
 | Strawberries | Planned | Ground cover, good companion for blueberries |
-| Grapes | Acquired | Variety TBD |
-| Hazelnuts | Acquired | Need 2 for pollination (like Yamhill + Jefferson) |
+| Grapes | Acquired | Himrod (seedless, white/golden table grape, hardy to zone 5) |
+| Hazelnuts | Acquired | Need 2 for pollination -- check if both varieties are compatible |
 
 ## Other Plantings
 
