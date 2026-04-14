@@ -1,6 +1,6 @@
 # Sites Knowledge Base
 
-Local clones of Rob's content/business sites, all deployed on Cloudflare Pages.
+A knowledge database for Rob's content sites. All deployed on Cloudflare Pages. Point an agent here for full context.
 
 ## Site Directory
 
@@ -42,7 +42,7 @@ Local clones of Rob's content/business sites, all deployed on Cloudflare Pages.
 - **Branch:** master
 - **Stack:** Hugo + Terminal theme (cyberpunk aesthetic)
 - **Admin:** [/admin/](https://opensourceapocalypse.com/admin/) (Sveltia CMS)
-- **About:** DIY/maker projects with terminal aesthetic. Categories: woodworking, solar, upcycling, electronics, water-systems, communication. Build plans with difficulty ratings and material lists.
+- **About:** DIY/maker projects with terminal aesthetic. Categories: woodworking, solar, upcycling, electronics, water-systems, communication.
 
 ### winkkyfarms.com
 - **Directory:** `winkky-farms/`
@@ -50,7 +50,7 @@ Local clones of Rob's content/business sites, all deployed on Cloudflare Pages.
 - **Branch:** master
 - **Stack:** Hugo + custom winkky-farm theme (based on Ananke)
 - **Admin:** [/admin/](https://winkkyfarms.com/admin/) (Sveltia CMS)
-- **About:** Family farm blog. Three generations of farming wisdom, seasonal stories, crops, livestock, and rural life.
+- **About:** Family farm blog. Three generations of farming wisdom, seasonal stories, crops, livestock.
 
 ### terminalschool.com
 - **Directory:** `terminalschool/`
@@ -58,27 +58,43 @@ Local clones of Rob's content/business sites, all deployed on Cloudflare Pages.
 - **Branch:** main
 - **Stack:** Static HTML (Bootstrap 5 + custom JS). No build step.
 - **Admin:** [/admin/](https://terminalschool.com/admin/) (Sveltia CMS)
-- **About:** Interactive terminal course teaching command-line skills, tmux, neovim, AI assistants, git, and parallel agent orchestration. Course content in `course/` as Markdown, front-end is a single-page app.
+- **About:** Interactive terminal course — command-line, tmux, neovim, AI assistants, git, agent orchestration.
+
+---
+
+## Documentation (`docs/`)
+
+| File | What it tracks |
+|------|---------------|
+| `accounts.md` | Where domains, hosting, services are registered |
+| `revenue-targets.md` | Per-site income goals and monetization status |
+| `publishing-log.md` | What content has been published and when |
+| `common-tasks.md` | How-to reference for recurring operations |
+
+## Media (`media/`)
+
+Local files for reference and content creation. Heavy files are gitignored.
+
+| Directory | What goes here |
+|-----------|---------------|
+| `media/solar/` | Solar array PDFs, specs, installation photos |
+| `media/inspiration/` | YouTube/video transcripts, ideas sparked by content |
+| `media/site-photos/` | Photos for use in site content |
+
+### YouTube inspiration workflow
+
+Give an agent a YouTube URL and context ("this video about X made me think about Y"). The agent will:
+1. Fetch the transcript
+2. Summarize key points
+3. Save to `media/inspiration/` with ideas tied to your sites
 
 ---
 
 ## Editing Content
 
-Every site has **Sveltia CMS** at `/admin/`. Open the site URL + `/admin/`, paste your GitHub personal access token, and edit content in the browser. Changes commit directly to the repo and Cloudflare Pages auto-deploys.
-
-Same token works across all sites.
+Every site has **Sveltia CMS** at `/admin/`. Open `https://<site>.com/admin/`, paste your GitHub personal access token, and edit in the browser. Changes commit directly and Cloudflare Pages auto-deploys.
 
 ## Building Locally
 
-Hugo sites:
-```bash
-cd <site-directory>
-hugo server -D
-```
-
-Terminalschool: just open `index.html` in a browser. No build step.
-
-## Authentication
-
-- **GitHub:** `gh` CLI authenticated as user `wink-`
-- **Google Workspace:** OAuth token at `~/.hermes/google_token.json` (rob@winkky.com)
+Hugo sites: `cd <site-dir> && hugo server -D`
+Terminalschool: open `index.html` in a browser

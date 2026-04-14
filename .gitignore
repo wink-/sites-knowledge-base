@@ -8,6 +8,15 @@ terminalschool/
 the-independent-home/
 winkky-farms/
 
+# Media files — large binaries, keep local only
+media/solar/*
+!media/solar/README.md
+media/site-photos/*
+!media/site-photos/README.md
+media/inspiration/*.pdf
+media/inspiration/*.mp4
+media/inspiration/*.mp3
+
 # Hugo build files
 public/
 resources/
