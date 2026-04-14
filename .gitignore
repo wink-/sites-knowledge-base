@@ -1,10 +1,24 @@
-# Hugo build files (generated in each submodule)
+# Site directories — each is its own repo, managed independently
+ai-independence/
+ai-sovereignty/
+open-source-apocalypse/
+radiant-gardens/
+radiant-home-solutions/
+terminalschool/
+the-independent-home/
+winkky-farms/
+
+# Hugo build files
 public/
 resources/
+.hugo_build.lock
 
 # OS files
 .DS_Store
 Thumbs.db
+._*
+.Spotlight-V100
+.Trashes
 
 # Editor files
 .vscode/
@@ -13,82 +27,20 @@ Thumbs.db
 *.swo
 *~
 
-# Hugo cache
-.hugo_build.lock
-
-# Development and build artifacts
-logs/
-*.log
-*.tmp
-*.cache
-.cache/
-
-# Environment and configuration files
-.env
-.env.local
-.env.*.local
-.env.development.local
-.env.test.local
-.env.production.local
-config.local.*
-
-# Node.js (for static site development)
+# Node.js
 node_modules/
-package.json
-package-lock.json
-yarn.lock
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Downloaded binaries and archives
-*.tar.gz
-*.zip
-*.deb
-*.rpm
-hugo_*
-
-# Temporary analysis and test files
-*-screenshots/
-analyze-*.js
-test-*.js
-screenshot*.js
-*.py
-
-# Python (for static site development)
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-env/
 venv/
-ENV/
-env.bak/
-venv.bak/
 
-# Temporary files created by scripts
-*.pid
-*.lock
+# Env files
+.env
+.env.*
 
-# Backup files
+# Misc
+*.log
+*.tmp
 *.bak
-*.backup
-
-# IDE and editor specific
-*.sublime-project
-*.sublime-workspace
-
-# OS generated files
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-
-# Note: Site directories are managed as git submodules
-# No need to ignore them - git handles submodules automatically
-
-# Local development directories (created by setup.sh)
-scripts/local/
-temp/
+*.cache
