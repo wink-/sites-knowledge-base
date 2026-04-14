@@ -21,12 +21,25 @@ Planted October 18, 2025. Two rows running north-south. All trees were 6-10 ft t
 | 3 | Empire Apple | | Apple | McIntosh x Red Delicious, mid season |
 | 4 | Bing Sweet Cherry | | Sweet cherry | Needs pollinator |
 
+## Protection
+
+- Cattle panel fences around each tree (beaver protection)
+- Deer fencing: not yet installed -- still needed for orchard area and garden
+- No tree guards or trunk wraps noted
+
+## Soil
+
+- Unknown -- hasn't been tested
+- Neighbor (70+ years on adjacent land) says everything grows great
+- No soil amendments at planting
+- TODO: soil test kit (cheap, worth doing before first growing season)
+
 ## Pollination Notes
 
 - **Plums:** Satsuma needs a pollinator -- Methley should cover it. Methley is self-fruitful but produces better with a partner. Good pairing.
 - **Pears:** Two varieties (Sunrise + Moonglow) should cross-pollinate.
 - **Apples:** Winecrisp, Granny Smith, and Empire should all cross-pollinate. Three varieties is solid.
-- **Cherry:** Bing needs a pollinator (Black Tartarian, Lapins, or Stella would work). Currently no partner planted -- may need to add one.
+- **Cherry:** Bing needs a pollinator (Black Tartarian, Lapins, or Stella would work). Currently no partner planted -- plans to add one.
 
 ## Content Ideas
 
