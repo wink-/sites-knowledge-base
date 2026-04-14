@@ -45,6 +45,8 @@ The GridBoss is a micro-grid main disconnect / transfer switch. Key specs from t
 
 16.96 kW is oversized for a 1,450 sq ft house. The reason: Rob drives a 2023 Tesla Model Y Long Range and charges at home. The array needs to cover both household use and EV charging. He also drives for Uber as a side hustle, so the car sees heavy use -- more miles means more charging demand.
 
+In 2025: 414 Uber trips, 5,598 online miles. At ~3.5 mi/kWh that's roughly 1,600 kWh of charging just for Uber, on top of personal driving and household use. See docs/uber-2025.md for full breakdown.
+
 ## Content Ideas
 
 - Real-world production vs EV charging consumption (can the array actually cover both?)
