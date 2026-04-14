@@ -11,6 +11,7 @@
 
 - Swamp in backyard
 - Catherine Creek feeds the swamp
+- Part of the old Chemung Canal runs through property
 - Long-term plan: pump water from swamp to garden using off-grid system on barn
 
 ## Structures
@@ -18,6 +19,16 @@
 - **House:** 1,450 sq ft, old, needs structural work. Currently leveling floors by jacking up a corner.
 - **Barn:** Old, used to have goats and chickens. Needs repair before use. Future site of off-grid water pump system.
 - **Sauna house:** Between two hills with a pond. Shared with uncle. Used Sundays.
+- **Two-car garage:** Built with 2x4s, concrete pad is cracked and sinking. Needs mudjacking on sunken sections and a new roof.
+- **Carport:** 20x22 ft, next to garage. Plan: lift it, put down compacted gravel floor, raise with ground-contact lumber, seal it up and convert to a golf simulator room.
+- **Metal shed:** Old, rough shape.
+- **Wooden shed:** Nicer but OSB floor needs replacing with pressure-treated plywood.
+
+## Water Issues
+
+- Road runoff is a constant battle -- needs more drainage
+- Part of the old Chemung Canal runs through the property
+- Swamp in backyard fed by Catherine Creek
 
 ## Equipment
 
@@ -41,3 +52,7 @@
 - Off-grid water system: swamp → pump → barn (solar?) → garden
 - Add cherry tree pollination partner for Bing
 - Widen tree cages from 2ft to 3-4ft diameter
+- Garage: mudjack sunken pad, new roof
+- Carport → golf simulator room (lift, gravel floor, ground-contact lumber, seal)
+- Wooden shed: replace OSB floor with pressure-treated plywood
+- Road drainage solution
