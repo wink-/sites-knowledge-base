@@ -24,12 +24,14 @@ Rob has cattle panels already (from tree fences) -- could use for trellises.
 ## Infrastructure
 
 - Raised beds: built, filled with aged compost
-- Deer fence: needed
+- Deer fence: needed (same as orchard)
 - Irrigation: unknown
 - Cold frame / season extension: unknown
+- Wood chip mulch from ChipDrop ($40) around beds and trees
+- Soil fill: local manure/compost/soil mix, $15 per truck bed load (2008 Chevy Silverado)
 
 ## Soil
 
 - Base: aged municipal compost (2+ years total aging)
-- Topsoil: to be added
+- Topsoil: adding this season -- local mix at $15/load, 2 loads should be enough
 - No soil test done yet -- should do before planting

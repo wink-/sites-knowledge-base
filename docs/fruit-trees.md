@@ -23,9 +23,11 @@ Planted October 18, 2025. Two rows running north-south. All trees were 6-10 ft t
 
 ## Protection
 
-- Cattle panel fences around each tree (beaver protection)
+- Cattle panel cages around each tree, ~2ft diameter x 5ft high (beaver protection)
+- Cages are tight -- may need widening to 3-4ft diameter as trees branch out
 - Deer fencing: not yet installed -- still needed for orchard area and garden
 - No tree guards or trunk wraps noted
+- Wood chip mulch from ChipDrop ($40 for a huge load) around tree and garden areas
 
 ## Soil
 
