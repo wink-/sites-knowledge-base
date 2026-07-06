@@ -2,6 +2,17 @@
 
 A knowledge database for Rob's content sites. All deployed on Cloudflare Pages. Point an agent here for full context.
 
+<!-- PROJECT-DOCS:START -->
+## Project Docs
+
+- [Documentation index](docs/index.md)
+- [Architecture](docs/architecture.md)
+- [Setup](docs/setup.md)
+- [Status](docs/status.md)
+- [Notes](docs/notes.md)
+- [Log](docs/log.md)
+<!-- PROJECT-DOCS:END -->
+
 ## Site Directory
 
 ### theindependenthome.com
