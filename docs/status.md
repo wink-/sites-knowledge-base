@@ -6,17 +6,16 @@ tags: [status, roadmap]
 timestamp: 2026-07-06T00:00:00Z
 ---
 
-# Status
+# Status: Documentation Refinement
 
-## Current Phase
-
-Knowledge base with OKF documentation bootstrap.
+Knowledge base with OKF documentation refined to the workspace format.
 
 ## Completed
 
 - README documents content site directory, CMS entry points, media structure, editing workflow, and local build notes.
 - Topic docs exist for accounts, revenue targets, publishing, common tasks, garden, property, fruit trees, solar array, and related notes.
 - OKF entrypoint docs added under `docs/`.
+- OKF index frontmatter, agent commands, status fields, and log entry refined on 2026-07-07.
 
 ## Next Tasks
 
@@ -28,3 +27,13 @@ Knowledge base with OKF documentation bootstrap.
 
 - This repo references multiple external site repos; their actual status may differ from this knowledge base.
 - Some docs may contain sensitive operating or personal context.
+
+## Last Worked On
+
+- 2026-07-07: Refined OKF project documentation format.
+
+## Suggested First Command
+
+```bash
+git diff --check
+```

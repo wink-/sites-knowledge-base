@@ -1,3 +1,7 @@
+---
+okf_version: "0.1"
+---
+
 # Sites Knowledge Base Docs
 
 This repo is the source of operating context for Rob's content sites, publishing workflows, media references, accounts, revenue targets, and property-related content ideas.

@@ -1,5 +1,9 @@
 # Log
 
+## 2026-07-07
+
+- Refined OKF documentation formatting with index frontmatter, agent command pointers, status phase details, and validation guidance.
+
 ## 2026-07-06
 
 - Added repo-specific agent instructions.
