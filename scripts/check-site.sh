@@ -40,11 +40,15 @@ if [ -f .gitmodules ] && [ -n "$(git config --file .gitmodules --get-regexp 'sub
 fi
 
 # --- 1. build ---
+# Build into a temp dir: some repos TRACK public/ (e.g. ai-sovereignty), so
+# building with --cleanDestinationDir or rm -rf public/ would delete tracked
+# files. A temp destination makes the script side-effect-free.
 echo "-- build --"
 BUILD_LOG=$(mktemp)
-if ! hugo --printPathWarnings --cleanDestinationDir >"$BUILD_LOG" 2>&1; then
+BUILD_DIR=$(mktemp -d /tmp/check-site.XXXXXX)
+if ! hugo --printPathWarnings -d "$BUILD_DIR" >"$BUILD_LOG" 2>&1; then
   fail "hugo build failed:"; sed 's/^/    /' "$BUILD_LOG"
-  exit 1
+  rm -rf "$BUILD_DIR"; exit 1
 fi
 if grep -qE "^WARN|^ERROR" "$BUILD_LOG"; then
   fail "build produced warnings:"
@@ -54,12 +58,12 @@ else
 fi
 rm -f "$BUILD_LOG"
 
-[ -d public ] || { fail "no public/ output"; exit 1; }
+[ -d "$BUILD_DIR" ] || { fail "no build output"; exit 1; }
 
 # --- 2. placeholder sweep ---
 echo "-- placeholder sweep --"
 PLACEHOLDER_RE='your-email-service\.com|example\.com/subscribe|CHANGE_ME|YOUR_API_KEY|lorem ipsum'
-HITS=$(grep -rlE "$PLACEHOLDER_RE" public/ --include="*.html" 2>/dev/null || true)
+HITS=$(grep -rlE "$PLACEHOLDER_RE" "$BUILD_DIR/" --include="*.html" 2>/dev/null || true)
 if [ -n "$HITS" ]; then
   echo "$HITS" | while read -r f; do fail "placeholder string in $f"; done
 else
@@ -69,12 +73,12 @@ fi
 # --- 3. internal link resolution ---
 echo "-- internal links --"
 MISSING_LINKS=0
-grep -rhoE 'href="/[a-zA-Z0-9/_.-]*"' public/ --include="*.html" \
+grep -rhoE 'href="/[a-zA-Z0-9/_.-]*"' "$BUILD_DIR/" --include="*.html" \
   | sed 's/href=//;s/"//g' | sort -u | while read -r p; do
     case "$p" in
       *".xml"|*".json"|*".css"|*".js"|*".ico"|*".png"|*".jpg"|*".svg"|*".woff2"|*".md"|*".txt"|*".webmanifest")
-        [ -f "public${p}" ] || echo "MISSING:$p" ;;
-      *) [ -f "public${p}index.html" ] || [ -f "public${p%/}" ] || echo "MISSING:$p" ;;
+        [ -f "${BUILD_DIR}${p}" ] || echo "MISSING:$p" ;;
+      *) [ -f "${BUILD_DIR}${p}index.html" ] || [ -f "${BUILD_DIR}${p%/}" ] || echo "MISSING:$p" ;;
     esac
   done | (MISSING=0; while read -r line; do
     [ "${line#MISSING:}" != "$line" ] && { fail "unresolved link ${line#MISSING:}"; MISSING=1; }
@@ -99,7 +103,7 @@ echo "-- menu vs taxonomy --"
 if grep -rq '/categories/' hugo.toml config.toml config/ 2>/dev/null; then
   MENUCATS=$(grep -hoE '/categories/[a-z-]+/' hugo.toml config.toml config/*.* 2>/dev/null | sort -u)
   for caturl in $MENUCATS; do
-    [ -f "public${caturl}index.html" ] || fail "menu links to ${caturl} but that taxonomy page doesn't exist (add categories frontmatter or fix menu)"
+    [ -f "${BUILD_DIR}${caturl}index.html" ] || fail "menu links to ${caturl} but that taxonomy page doesn't exist (add categories frontmatter or fix menu)"
   done
   pass "menu category links checked"
 else
@@ -118,5 +122,9 @@ fi
 
 # --- summary ---
 echo "== result: $ERRORS failure(s) =="
-[ "$KEEP_BUILD" != "--keep-build" ] && rm -rf public
+if [ "$KEEP_BUILD" = "--keep-build" ]; then
+  echo "build kept at: $BUILD_DIR"
+else
+  rm -rf "$BUILD_DIR"
+fi
 exit $ERRORS
