@@ -22,6 +22,7 @@ This repo is the source of operating context for Rob's content sites, publishing
 | --- | --- |
 | [accounts.md](accounts.md) | Domain, hosting, and service account references. |
 | [common-tasks.md](common-tasks.md) | Recurring workflows for posts, builds, DNS, and media. |
+| [launch-checklist.md](launch-checklist.md) | Standard pre-launch gate for any site; pair with `scripts/check-site.sh`. |
 | [publishing-log.md](publishing-log.md) | Published content tracking. |
 | [revenue-targets.md](revenue-targets.md) | Site monetization goals and status. |
 | [about-rob.md](about-rob.md) | Personal/site voice context. |

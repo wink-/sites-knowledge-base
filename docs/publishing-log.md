@@ -2,6 +2,15 @@
 
 Track what's been published and when. Update this when new posts go live.
 
+## 2026
+
+### ai-independence.com
+| Date | Content | Notes |
+|------|---------|-------|
+| Aug 2026 | **Site launch** | Launched after full pre-launch gate (see [launch-checklist.md](launch-checklist.md)): fabricated claims stripped, placeholder email capture disabled, legal pages added, all checks green |
+| Aug 2026 | 7 posts live | welcome, de-Google guide, local AI guide, facial recognition, Google-data audit, Snowden-inspired comms, privacy-first business blueprint (all de-risked/rewritten for accuracy) |
+| Aug 2026 | Escape kit | Direct download, no email gate |
+
 ## 2025
 
 ### theindependenthome.com

@@ -27,7 +27,7 @@ A knowledge database for Rob's content sites. All deployed on Cloudflare Pages. 
 - **Directory:** `ai-independence/`
 - **Repo:** [wink-/ai-independence](https://github.com/wink-/ai-independence)
 - **Branch:** master
-- **Stack:** Hugo + Terminal theme (cyberpunk green-on-black aesthetic)
+- **Stack:** Hugo + Terminal theme (blue cyberpunk aesthetic, `ai-free:~$` persona)
 - **Admin:** [/admin/](https://ai-independence.com/admin/) (Sveltia CMS)
 - **About:** Using AI tools for personal independence. Terminal-styled UI with command-line prompts.
 
